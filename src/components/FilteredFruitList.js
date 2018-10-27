@@ -1,10 +1,9 @@
 import React from 'react';
 
 const FilteredFruitList = (props) => {
-  
+
   return (
     <ul className="fruit-list">
-
       {this.props}
     </ul>
   )
