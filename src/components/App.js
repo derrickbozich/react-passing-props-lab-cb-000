@@ -22,6 +22,7 @@ export default class App extends Component {
 
   componentWillMount() {
     this.fetchFilters();
+    this.fetchItems();
   }
 
   fetchItems = () => {
