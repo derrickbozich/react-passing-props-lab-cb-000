@@ -56,9 +56,7 @@ export default class App extends Component {
 
         <FilteredFruitList fruits={this.getFilteredFruits()} />
 
-      
-
-
+        <FruitBasket handleChange={(event) => this.handleFilterChange(event)}  filters={this.state.filters} fruits={this.getFilteredFruits()} />
       </div>
     )
   }
