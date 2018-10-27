@@ -40,7 +40,7 @@ export default class App extends Component {
 
   getFilteredFruits = () => {
     const list = this.state.selectedFilter === 'all' ? this.state.items : this.state.items.filter(i => i.fruit_type === this.state.selectedFilter);
-    return list.map((item, index) => <li key={index}>{item.char}</li>
+    return list.map((item, index) => <li key={index}>{item.char}</li>)
   }
 
   render(){
@@ -55,7 +55,7 @@ export default class App extends Component {
 
         <FilteredFruitList fruits={this.getFilteredFruits()}   />
         // <ul className="fruit-list">
-        // 
+        //
         //   {list.map((item, index) => <li key={index}>{item.char}</li>)}
         // </ul>
 
