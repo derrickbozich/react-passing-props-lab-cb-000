@@ -43,18 +43,13 @@ export default class App extends Component {
 
     return(
       <div>
-        <select onChange={this.handleFilterChange} defaultValue='all'>
-            <option value='all'>All</option>
-            {this.state.filters.map(filter =>
-              <option key={filter} value={filter}>{filter}</option>
-            )}
-        </select>
+    
 
-        <Filter handleChange={this.handleFilterChange} defaultValue='all' />
+        <Filter handleChange={this.handleFilterChange} defaultValue='all' filters={this.state.filters} />
 
 
         <ul className="fruit-list">
-          
+
           {list.map((item, index) => <li key={index}>{item.char}</li>)}
         </ul>
 
