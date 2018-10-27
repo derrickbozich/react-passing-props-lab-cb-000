@@ -3,7 +3,6 @@ import React from 'react';
 const Filter = (props) => {
   return(
     <div>
-      <h1>test</h1>
       <select onChange={props.handleChange} defaultValue='all'>
           <option value='all'>All</option>
           {props.filters.map(filter =>
