@@ -52,7 +52,7 @@ export default class App extends Component {
 
 
         <ul className="fruit-list">
-          {debugger}
+          
           {list.map((item, index) => <li key={index}>{item.char}</li>)}
         </ul>
 
