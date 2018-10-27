@@ -1,6 +1,7 @@
 import React from 'react';
 
 const FilteredFruitList = (props) => {
+  debugger
   return props
 }
 
