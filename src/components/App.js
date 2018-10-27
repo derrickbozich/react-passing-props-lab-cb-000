@@ -54,7 +54,8 @@ export default class App extends Component {
 
         <Filter handleChange={(event) => this.handleFilterChange(event)} defaultValue='all' filters={this.state.filters} />
 
-      
+        <FilteredFruitList fruits={this.getFilteredFruits()}
+        
         <ul className="fruit-list">
 
           {list.map((item, index) => <li key={index}>{item.char}</li>)}
