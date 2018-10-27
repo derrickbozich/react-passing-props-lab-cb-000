@@ -39,7 +39,7 @@ export default class App extends Component {
 
   render(){
 
-    const list = this.state.filter === 'all' ? this.state.items : this.state.items.filter(i => i.fruit_type === this.props.filter);
+    const list = this.state.filter === 'all' ? this.state.items : this.state.items.filter(i => i.fruit_type === this.state.filter);
 
     return(
       <div>
