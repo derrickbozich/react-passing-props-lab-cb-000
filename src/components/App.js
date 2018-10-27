@@ -46,7 +46,7 @@ export default class App extends Component {
       <div>
 
 
-        <Filter  defaultValue='all' filters={this.state.filters} />
+        <Filter handleChange={() => this.handleFilterChange} defaultValue='all' filters={this.state.filters} />
 
 
         <ul className="fruit-list">
