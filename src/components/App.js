@@ -38,6 +38,9 @@ export default class App extends Component {
   }
 
   render(){
+
+    const list = this.props.filter === 'all' ? this.state.items : this.state.items.filter(i => i.fruit_type === this.props.filter);
+
     return(
       <div>
         <select onChange={this.handleFilterChange} defaultValue='all'>
@@ -47,8 +50,7 @@ export default class App extends Component {
             )}
         </select>
 
-          const list = !this.props.filter || this.props.filter === 'all' ? this.state.items : this.state.items.filter(i => i.fruit_type === this.props.filter);
-      
+
           return (
             <ul className="fruit-list">
               {list.map((item, index) => <li key={index}>{item.char}</li>)}
