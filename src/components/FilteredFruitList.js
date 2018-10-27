@@ -4,7 +4,7 @@ const FilteredFruitList = (props) => {
 
   return (
     <ul className="fruit-list">
-      {this.props}
+      {this.props.fruits}
     </ul>
   )
 }
