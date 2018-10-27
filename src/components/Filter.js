@@ -9,8 +9,6 @@ const Filter = (props) => {
         )}
     </select>
   )
-
-
 }
 
 // class Filter extends Component {
