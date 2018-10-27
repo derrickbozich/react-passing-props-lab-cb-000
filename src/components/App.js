@@ -38,6 +38,11 @@ export default class App extends Component {
       .then(filters => this.setState({ filters }));
   }
 
+  getFilteredFruits = () => {
+    const list = this.state.selectedFilter === 'all' ? this.state.items : this.state.items.filter(i => i.fruit_type === this.state.selectedFilter);
+    return list.map((item, index) => <li key={index}>{item.char}</li>
+  }
+
   render(){
     // const list = this.state.items
     const list = this.state.selectedFilter === 'all' ? this.state.items : this.state.items.filter(i => i.fruit_type === this.state.selectedFilter);
@@ -48,7 +53,7 @@ export default class App extends Component {
 
         <Filter handleChange={(event) => this.handleFilterChange(event)} defaultValue='all' filters={this.state.filters} />
 
-
+        <FilteredFruitList   />
         <ul className="fruit-list">
 
           {list.map((item, index) => <li key={index}>{item.char}</li>)}
