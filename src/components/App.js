@@ -44,7 +44,7 @@ export default class App extends Component {
 
     return(
       <div>
-    
+
 
         <Filter handleChange={this.handleFilterChange} defaultValue='all' filters={this.state.filters} />
 
