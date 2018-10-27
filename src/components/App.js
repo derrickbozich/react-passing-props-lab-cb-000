@@ -15,15 +15,21 @@ export default class App extends Component {
     }
   }
 
-    handleFilterChange = event => {
-      console.log('new filter: ', event.target.value);
-      this.setState({ selectedFilter: event.target.value });
-    }
+  handleFilterChange = event => {
+    console.log('new filter: ', event.target.value);
+    this.setState({ selectedFilter: event.target.value });
+  }
+
+  fetchFilters = () => {
+    fetch('/api/fruit_types')
+      .then(response => response.json())
+      .then(filters => this.setState({ filters }));
+  }
 
   render(){
     return(
       <div>
-        <select onChange={this.props.handleChange} defaultValue='all'>
+        <select onChange={this.handleFilterChange} defaultValue='all'>
             <option value='all'>All</option>
             {this.state.filters.map(filter =>
               <option key={filter} value={filter}>{filter}</option>
