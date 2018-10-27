@@ -50,6 +50,8 @@ export default class App extends Component {
             )}
         </select>
 
+        <Filter handleChange={this.handleFilterChange} defaultValue='all' />
+
 
         <ul className="fruit-list">
           
