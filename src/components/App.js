@@ -51,9 +51,6 @@ export default class App extends Component {
     return(
       <div>
 
-        <Filter handleChange={(event) => this.handleFilterChange(event)} defaultValue='all' filters={this.state.filters} />
-
-        <FilteredFruitList fruits={this.getFilteredFruits()} />
 
         <FruitBasket handleChange={(event) => this.handleFilterChange(event)}  filters={this.state.filters} fruits={this.getFilteredFruits()} />
       </div>
