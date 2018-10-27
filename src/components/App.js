@@ -20,6 +20,10 @@ export default class App extends Component {
     this.setState({ selectedFilter: event.target.value });
   }
 
+  componentWillMount() {
+    this.fetchFilters();
+  }
+
   fetchFilters = () => {
     fetch('/api/fruit_types')
       .then(response => response.json())
