@@ -5,7 +5,7 @@ import FilteredFruitList from './FilteredFruitList.js';
 
 const FruitBasket = (props) => {
   return(
-    <div>
+    <div className="fruit-basket">
       <Filter handleChange={props.handleChange} defaultValue='all' filters={props.filters} />
       <FilteredFruitList fruits={props.fruits} />
     </div>
