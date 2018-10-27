@@ -1,8 +1,13 @@
 import React from 'react';
 
 const FilteredFruitList = (props) => {
-  debugger
-  return props
+  
+  return (
+    <ul className="fruit-list">
+
+      {this.props}
+    </ul>
+  )
 }
 
 // class FilteredFruitList extends Component {
