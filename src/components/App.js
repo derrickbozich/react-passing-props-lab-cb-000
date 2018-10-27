@@ -50,11 +50,12 @@ export default class App extends Component {
             )}
         </select>
 
-        
+
         <ul className="fruit-list">
+          {debugger}
           {list.map((item, index) => <li key={index}>{item.char}</li>)}
         </ul>
-        
+
 
       </div>
     )
