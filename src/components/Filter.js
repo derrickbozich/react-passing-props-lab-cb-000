@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Filter = (props) => {
-  debugger
+  
   <select onChange={this.props.handleChange} defaultValue='all'>
       <option value='all'>All</option>
       {this.props.filters.map(filter =>
