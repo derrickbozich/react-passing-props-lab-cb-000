@@ -50,12 +50,11 @@ export default class App extends Component {
             )}
         </select>
 
-
-          return (
-            <ul className="fruit-list">
-              {list.map((item, index) => <li key={index}>{item.char}</li>)}
-            </ul>
-          );
+        
+        <ul className="fruit-list">
+          {list.map((item, index) => <li key={index}>{item.char}</li>)}
+        </ul>
+        
 
       </div>
     )
