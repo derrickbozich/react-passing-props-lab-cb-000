@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 
 import FruitBasket from './FruitBasket';
 
-
 export default class App extends Component {
-
   constructor(){
     super();
 
@@ -12,7 +10,6 @@ export default class App extends Component {
       filters: [],
       selectedFilter: 'all',
       items: []
-
     }
   }
 
