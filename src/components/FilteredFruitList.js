@@ -1,7 +1,7 @@
 import React from 'react';
 
 const FilteredFruitList = (props) => {
-
+  return props
 }
 
 // class FilteredFruitList extends Component {
