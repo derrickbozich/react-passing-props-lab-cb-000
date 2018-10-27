@@ -56,10 +56,7 @@ export default class App extends Component {
 
         <FilteredFruitList fruits={this.getFilteredFruits()} />
 
-        <ul className="fruit-list">
-
-          {list.map((item, index) => <li key={index}>{item.char}</li>)}
-        </ul>
+      
 
 
       </div>
